@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/bts/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <header class="header ps-5 pe-5">
+            <form action="" method="get" id="form-search" class="form-control d-sm-none d-md-none" style="display: none;">
+                <input type="text" id="search" name="search" placeholder="Search here...">
+                <span class="icon-search">
+                    <i class="fas fa-times"></i>
+                </span>
+            </form>
+            <nav class="nav  d-flex justify-content-between">
+                <div class="nav-logo text-white">
+                    <span class="d-lg-none"><i class="fas fa-bars"></i></span>
+                    <span>BARISTA</span>
+                    
+                </div>
+                <div class="nav-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Home</a><i class="fas fa-angle-right d-lg-none"></i>
+                            <div class="menu-child">
+                                <ul>
+                                    <li><a href="#">child-1</a></li>
+                                    <li><a href="#">child-2</a></li>
+                                    <li><a href="#">child-3</a></li>
+                                    <li><a href="#">child-4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Menu</a><i class="fas fa-angle-right d-lg-none"></i></li>
+                        <li><a href="#">Reservation</a><i class="fas fa-angle-right d-lg-none"></i></li>
+                        <li><a href="#">Pages</a><i class="fas fa-angle-right d-lg-none"></i></li>
+                        <li><a href="#">Blog</a><i class="fas fa-angle-right d-lg-none"></i></li>
+                        <li><a href="#">Shop</a><i class="fas fa-angle-right d-lg-none"></i></li>
+                    </ul>
+                    <ul class="account">
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                        <li><i class="fas fa-search"></i></li>
+                        <li><i class="fas fa-bars"></i></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Slider start -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <div class="image">
+                        <img src="https://ttmvietnam.com.vn/agriculture/upload/images/coffee-banner.png" alt="" width="100%">
+                    </div>
+                    <!-- <button class="btn btn-danger"><a href="#" class="text-decoration-none text-white">READ MORE</a></button> -->
+                </div>
+                <div class="navigation-manual">
+                    <span id="btn-prev">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                    </span>
+                    <span id="btn-next">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </span>
+                    <ul>
+                        <li class="running"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Slider end -->
+
+        <!-- Happens Here -->
+        <section class="happens">
+            <div class="happens-heading">
+                <h5>What Happens Here</h5>
+                <h2>COFFEE BUILD YOUR BASE.</h2>
+                <small></small>
+            </div>
+            <div class="happens-calendar container">              
+                <div class="row">
+                    <div class="calendar col-4">
+                        <div class="calendar-image">
+                            <img src="../src/image/home1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="calendar-title">
+                            <h3>PLACES TO GET LOST</h3>
+                        </div>
+                        <div class="calendar-desc">
+                            <span>Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix atle.</span>
+                        </div>
+                        <div class="calendar-more">
+                            <a href="#" class="text-decoration-none">READ MORE  <i class="fas fa-long-arrow-alt-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="calendar col-4">
+                        <div class="calendar-image">
+                            <img src="../src/image/home2.jpg" alt="" width="100%">
+                        </div>
+                        <div class="calendar-title">
+                            <h3>PLACES TO GET LOST</h3>
+                        </div>
+                        <div class="calendar-desc">
+                            <span>Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix atle.</span>
+                        </div>
+                        <div class="calendar-more">
+                            <a href="#" class="text-decoration-none">READ MORE  <i class="fas fa-long-arrow-alt-right ps-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="calendar col-4">
+                        <div class="calendar-box">
+                            <h3>OPENING HOURS</h3>
+                            <p class="date">
+                                <span>MONDAY</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span style="color: #c7a17a">CLOSED</span>
+                            </p>
+                            <p class="date">
+                                <span>TUESDAY</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span>9:00 - 22:00</span>
+                            </p>
+                            <p class="date">
+                                <span>WEDNESDAY</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span>9:00 - 22:00</span>
+                            </p>
+                            <p class="date">
+                                <span>THURSDAY</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span>9:00 - 22:00</span>
+                            </p>
+                            <p class="date">
+                                <span>FRIDAY *</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span>9:00 - 1:00</span>
+                            </p>
+                            <p class="date">
+                                <span>SATURDAY *</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span>12:00 - 1:00</span>
+                            </p>
+                            <p class="date">
+                                <span>SUNDAY</span>
+                                <span>
+                                    <span class="line"></span>
+                                </span>
+                                <span>9:00 - 22:00</span>
+                            </p>
+                            
+                            <h4>CALL: +84 98 2211 485</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Happens Here -->
+
+
+        <!-- Application start -->
+        <section class="application">
+            <div class="application-body container">
+                <div class="row">
+                    <div class="row-left col-lg-6">
+                        <span class="row-left-heading"><i>Application</i></span>
+                        <h2>USE OUR APPLICATION.</h2>
+                        <span class="cell">
+                            <div></div>
+                        </span>
+                        <p class="row-left-title">
+                            Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id.
+                        </p>
+                        <a href="#" class="text-decoration-none"><button class="btn">READ MORE <i class="fas fa-long-arrow-alt-right ps-2"></i></button></a>
+                    </div>
+                    <div class="row-right col-lg-6">
+                        <video src="../src/video/COFFEE on Vimeo.mp4.mp4" autoplay loop preload="auto"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Application end -->
+
+    </div>
+    <script src="../src/js/index.js"></script>
+</body>
+</html>

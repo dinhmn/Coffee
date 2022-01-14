@@ -1,0 +1,193 @@
+@import 'fonts';
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#root {
+    header.header {
+        height: 70px;
+        width: 100vw;
+        background-color: rgba(21, 20, 18, 1);
+        border-bottom-color: rgba(255, 255, 255, 0);
+        form {
+            height: 70px;
+            line-height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 0;
+            input {
+                width: 90vw;
+                border: none;
+                padding: 20px 20px;
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+            span {
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+        .nav {
+
+            &-logo {
+                span {
+                    line-height: 70px;
+                    max-height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+            &-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                ul {
+                    padding-left: 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li {
+                        list-style: none;
+                        a,i {
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                            padding: 5px 20px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                        a{
+                            padding: 15px 20px;
+                            line-height: 70px;
+                        }
+                        &:hover .menu-child{
+                            display: block;
+                        }
+                        .menu-child {
+                            display: none;
+                            background-color: white;
+                            position: absolute;
+                            ul {
+                                border: 1px solid #c7a17a;
+                                display: flex;
+                                justify-content: center;
+                                align-items: start;
+                                flex-direction: column;
+                                width: 200px;
+                                text-align: left;
+
+                                li {
+                                    a {
+                                        color: black;
+                                    }
+                                    width: 197px;
+                                    &:hover {
+                                        background-color: rgb(240, 240, 240);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        border-left: 2px solid wheat;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1023px){
+    #root {
+        header.header {
+            background-color: white;
+            font-family: 'Oswald', sans-serif;
+            overflow: hidden;
+            .nav {
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+
+                &-logo {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 90px;
+                    text-align: center;
+                    width: 100%;
+                    span {
+
+                        i {
+                            font-size: 16px;
+                            color: #c7a17a;
+                        }
+                        color: #c7a17a;
+                    }
+                    
+                    
+                }
+                &-menu {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        padding-right: 50px;                        
+                        li {
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            
+                            &:not(:first-child) {
+                                border-top: 1px solid #c7a17a;
+                            }
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 250px;
+                            
+                            a{
+                                display: block;
+                                color: #c7a17a;
+                                font-size: 14px;
+                                font-weight: normal;
+                                padding: 0px;
+                                line-height: 40px;
+                            }
+                            i {
+                                color: #c7a17a;
+                                font-size: 12px;
+                            }
+                            &:hover {
+                                // position: relative;
+                                // .menu-child {                                    
+                                //     display: block;
+                                //     height: fit-content;
+                                //     position: static;
+                                    
+                                // }
+                            }
+
+                        }
+                        &.account {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
