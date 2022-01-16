@@ -429,7 +429,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 320px;
 }
 
 #root .happens-calendar .row .calendar:last-child .calendar-box {
@@ -490,10 +489,12 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  background-attachment: fixed;
 }
 
 #root .application-body {
+  padding: 100px 0;
+  padding-bottom: 20px;
   margin: 0 auto;
 }
 
@@ -539,6 +540,130 @@ html {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#root .application-end {
+  overflow: hidden;
+}
+
+#root .application-end .slicks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#root .application-end .slicks .slick {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#root .application-end .slicks .slick a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#root .application-end .slicks .none {
+  display: none;
+}
+
+#root .flavours {
+  padding: 70px 0;
+  background-color: #151412;
+}
+
+#root .flavours .flavour {
+  margin: auto;
+}
+
+#root .flavours .flavour-heading {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#root .flavours .flavour-heading i {
+  color: #c7a17a;
+  line-height: 40px;
+}
+
+#root .flavours .flavour-heading h2 {
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+}
+
+#root .flavours .flavour-heading small {
+  background-color: #c7a17a;
+  width: 140px;
+  padding: 1px;
+  border: 1px solid #c7a17a;
+  display: inline-block;
+}
+
+#root .flavours .flavour-body {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+#root .flavours .flavour-body .category {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+#root .flavours .flavour-body .category-image {
+  text-align: center;
+}
+
+#root .flavours .flavour-body .category-image img {
+  width: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#root .flavours .flavour-body .category-title {
+  text-align: center;
+  display: block;
+  line-height: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#root .flavours .flavour-body .category-title h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#root .flavours .flavour-body .category-desc {
+  display: block;
+  text-align: center;
+}
+
+#root .flavours .flavour-body .category-desc span {
+  color: white;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -600,6 +725,32 @@ html {
   .application-body .row-right {
     margin-top: 50px;
     width: 90%;
+  }
+  .application-end .slicks .slick {
+    width: 100vw;
+  }
+  .application-end .slicks .slick a img {
+    width: 100vw !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .flavours .flavour-heading {
+    margin-bottom: 0px !important;
+  }
+  .flavours .flavour-body .category {
+    width: 100% !important;
+    margin-top: -20px;
+  }
+  .flavours .flavour-body .category-image {
+    padding-top: -20px;
+  }
+  .flavours .flavour-body .category-image img {
+    width: 50% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .flavours .flavour-body .category-desc {
+    padding: 10px 10px !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
